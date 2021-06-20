@@ -1,2 +1,2 @@
 # SpaceBattle
- Pygame
+ This is a space shooter Pygame
