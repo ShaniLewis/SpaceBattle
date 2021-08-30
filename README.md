@@ -57,10 +57,13 @@ Once you start the game there are four levels:
 20 enemy ships come down at speed 3 in an organized zig-zag formation and try to shoot and get past the user player
 
 
-## Level 3
+## Level 4
 
 The boss enemy ship comes down at speed 4 and moves around in a T formation trying to shoot the user player. On either side of the boss enemy, 
-small enemy ships come down and try to shoot and get past the user
+small enemy ships come down in pairs of two and try to shoot and get past the player.
+
+##Here is a full game play video of all 4 levels
+![Alt text](https://github.com/ShaniLewis/SpaceBattle/blob/main/game%20preview/space battle.mp4)
 
 
 
