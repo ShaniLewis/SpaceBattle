@@ -59,7 +59,7 @@ There is one page dedicated to listing the credits of the project
 The boss enemy ship comes down at speed 4 and moves around in a T formation trying to shoot the user player. On either side of the boss enemy, 
 small enemy ships come down in pairs of two and try to shoot and get past the player.
 
-## Full game play demo video of all 4 levels
+## Demo Video Of All 4 Levels
 <b> Sound included!</b>
 
 <p><b> level 1 </b>: 00:09 </p>
