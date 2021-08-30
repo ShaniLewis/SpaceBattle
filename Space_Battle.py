@@ -38,23 +38,9 @@ thirty_font = pygame.font.SysFont("mono", 30)
 twenty_five_font = pygame.font.SysFont("mono", 25) 
 twenty_font = pygame.font.SysFont("mono", 20)   
 
-#def resource_path(relative_path):
-#    """ Get absolute path to resource, works for dev and for PyInstaller """
-#    try:
-        # PyInstaller creates a temp folder and stores path in _MEIPASS
-#        base_path = sys._MEIPASS
-#   except Exception:
-#        base_path = os.path.abspath(".")
-
-#    return os.path.join(base_path, relative_path)
-
-
 def resource_path(relative_path):
     base_path = getattr(sys, 'MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
-    
-#def resource_path(relative):
-#    return os.path.join(os.environ.get("_MEIPASS2", os.path.abspath(".")), relative)
 
 
 all_sounds = ["shoot", "hit", "enemy_past", "health", "colliding", "game_over", "Win", "level1",
@@ -82,6 +68,8 @@ for i in all_art:
 # Load Background image
 BG = pygame.image.load(resource_path("art\\BG.png")).convert()
 checked = 1
+
+
 
 class Laser:
     def __init__(self, x, y, image):   
@@ -269,6 +257,7 @@ class Enemy(Ship): #inherits from ship
 
 class restore_health(Ship):
     Color_Dict = {"green": Health_restorer}
+    
     def __init__(self, x, y, color, health = 100):
         super().__init__(x, y, health)
         self.ship_image = self.Color_Dict[color]
@@ -566,7 +555,7 @@ def main():
                 muted = False            
                 volume_on()
         
-        # pause
+        # PAUSE
         if keys[pygame.K_p]:
             pause = True
             volume_off() # pause music
@@ -576,7 +565,7 @@ def main():
             player_velocity = 0
             laser_velocity = 0              
         
-        # resume
+        # RESUME / PLAY
         if keys[pygame.K_u]:
             pause = False
             if not muted:
@@ -587,12 +576,12 @@ def main():
             player_velocity = t_player_velocity
             laser_velocity = t_laser_velocity              
     
-        # return to main menu
+        # RETURN to main menu
         if keys[pygame.K_b]:
             volume_off()           
             main_menu()
         
-        # quit
+        # QUIT
         if keys[pygame.K_q]:
             run = False
             pygame.QUIT
@@ -606,7 +595,7 @@ def main():
             # move restore health objs down screen
             res.move(res_velocity) 
             
-            # if player collides with health...
+            # if player collides with health plus sign...
             if collide(res, player):
                 if player.health > 75: 
                     player.health = 100
@@ -1361,3 +1350,18 @@ opening()
         
 # THINGS TO DO:
 # 1. Pop up messages?
+
+
+#def resource_path(relative_path):
+#    """ Get absolute path to resource, works for dev and for PyInstaller """
+#    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+#        base_path = sys._MEIPASS
+#   except Exception:
+#        base_path = os.path.abspath(".")
+
+#    return os.path.join(base_path, relative_path)
+
+    
+#def resource_path(relative):
+#    return os.path.join(os.environ.get("_MEIPASS2", os.path.abspath(".")), relative)
