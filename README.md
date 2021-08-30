@@ -1,7 +1,11 @@
 # SpaceBattle
-This is my first ever pygame! I made a space shooter game where the object of the game is to defeat all incoming enemy ships. 
+<p> This is my first ever pygame! I made a space shooter game where the object of the game is to defeat all incoming enemy ships. 
 There is a main menu, an options menu, a credits menu, an instructions tutorial and a button to start the game. 
-All the code can be found in SpaceBattle.py
+All the code can be found in SpaceBattle.py </p>
+
+To play an exe version of my game click
+<a href="https://github.com/ShaniLewis/SpaceBattle/raw/main/Space%20Battle%20Executabe%20File/Space_Battle.exe" download> here </a>
+to download
 
 
 ## Start Menu
