@@ -1,1 +1,1 @@
-# This is a exe version of my game. Download to play and test it out!
+This is a exe version of my game. Download to play and test it out!
