@@ -1,4 +1,4 @@
-# Space Battle <a name="space_battle"></a>
+# Space Battle <a name="space_battle"></a> &#128760;
 <p> This is my first ever pygame! I made a space shooter game where the object of the game is to defeat all incoming enemy ships. 
 There is a main menu, an options menu, a credits menu, an instructions tutorial and a button to start the game. 
 All the code can be found in SpaceBattle.py </p>
@@ -70,7 +70,7 @@ The boss enemy ship comes down at speed 4 and moves around in a T formation tryi
 small enemy ships come down in pairs of two and try to shoot and get past the player.
 
 # Demo Video Of All 4 Levels <a name="demo"></a>
-<b> Sound included!</b>
+<b> Sound included!</b> &#128266;
 
 <p><b> level 1 </b>: 00:09 </p>
 <p><b> level 2 </b>: 00:50 </p>
